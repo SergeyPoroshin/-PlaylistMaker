@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yp_blue"
+    android:background="@color/main_background"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
@@ -40,6 +40,7 @@
         app:backgroundTint="@color/yp_white"
         app:cornerRadius="@dimen/button_corner_radius"
         app:icon="@drawable/ic_search"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.PlaylistMaker.MainButton"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/space_8"
         app:iconSize="@dimen/icon_size"
@@ -66,6 +67,7 @@
         app:backgroundTint="@color/yp_white"
         app:cornerRadius="@dimen/button_corner_radius"
         app:icon="@drawable/ic_library"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.PlaylistMaker.MainButton"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/space_8"
         app:iconSize="@dimen/icon_size"
@@ -93,6 +95,7 @@
         app:backgroundTint="@color/yp_white"
         app:cornerRadius="@dimen/button_corner_radius"
         app:icon="@drawable/ic_settings"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.PlaylistMaker.MainButton"
         app:iconGravity="textStart"
         app:iconPadding="@dimen/space_8"
         app:iconSize="@dimen/icon_size"

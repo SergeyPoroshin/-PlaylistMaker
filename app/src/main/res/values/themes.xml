@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
+
+    <style name="ShapeAppearance.PlaylistMaker.MainButton" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/button_corner_radius</item>
+    </style>
 </resources>
