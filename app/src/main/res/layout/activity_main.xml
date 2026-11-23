@@ -81,7 +81,7 @@
         android:layout_marginStart="@dimen/space_16"
         android:layout_marginTop="@dimen/space_16"
         android:layout_marginEnd="@dimen/space_16"
-        android:layout_marginBottom="@dimen/space_28"
+        android:layout_marginBottom="@dimen/space_32"
         android:layout_weight="1"
         android:fontFamily="sans-serif-medium"
         android:insetTop="0dp"
