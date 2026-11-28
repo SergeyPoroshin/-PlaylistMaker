@@ -1,14 +1,84 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/yp_blue</item>
+        <item name="colorPrimaryVariant">@color/yp_blue</item>
+        <item name="colorOnPrimary">@color/yp_white</item>
+        <item name="colorSecondary">@color/yp_blue</item>
+        <item name="android:fontFamily">@font/ys_text_regular</item>
+        <item name="fontFamily">@font/ys_text_regular</item>
+        <item name="android:statusBarColor">@color/main_background</item>
+        <item name="android:navigationBarColor">@color/main_background</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
 
+    <style name="Theme.PlaylistMaker.Settings" parent="Theme.PlaylistMaker">
+        <item name="android:statusBarColor">@color/settings_background</item>
+        <item name="android:navigationBarColor">@color/settings_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
     <style name="ShapeAppearance.PlaylistMaker.MainButton" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/button_corner_radius</item>
+    </style>
+
+    <style name="ScreenTitle">
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="MainButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/space_16</item>
+        <item name="android:layout_marginEnd">@dimen/space_16</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/yp_black</item>
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:elevation">0dp</item>
+        <item name="backgroundTint">@color/yp_white</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="elevation">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/space_8</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconTint">@color/yp_black</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.PlaylistMaker.MainButton</item>
+    </style>
+
+    <style name="SettingsMenuItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/settings_row_height</item>
+        <item name="android:fontFamily">@font/ys_text_regular</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/space_16</item>
+        <item name="android:paddingEnd">@dimen/space_16</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="drawableTint">@color/settings_icon</item>
+    </style>
+
+    <style name="SettingsSwitch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/settings_row_height</item>
+        <item name="android:layout_marginTop">@dimen/space_24</item>
+        <item name="android:fontFamily">@font/ys_text_regular</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/space_16</item>
+        <item name="android:paddingEnd">@dimen/space_16</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="thumbTint">@color/switch_thumb</item>
+        <item name="trackTint">@color/switch_track</item>
+        <item name="useMaterialThemeColors">false</item>
     </style>
 </resources>

@@ -24,65 +24,33 @@
             app:tint="@color/text_primary" />
 
         <TextView
+            style="@style/ScreenTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/space_24"
-            android:fontFamily="sans-serif-medium"
             android:text="@string/settings"
-            android:textColor="@color/text_primary"
-            android:textSize="@dimen/text_size_22" />
+            android:textColor="@color/text_primary" />
 
     </LinearLayout>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/themeSwitch"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/settings_row_height"
-        android:layout_marginTop="@dimen/space_24"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/space_16"
-        android:paddingEnd="@dimen/space_16"
-        android:text="@string/dark_theme"
-        android:textColor="@color/text_primary"
-        android:textSize="@dimen/text_size_16"
-        app:thumbTint="@color/switch_thumb"
-        app:trackTint="@color/switch_track"
-        app:useMaterialThemeColors="false" />
+        style="@style/SettingsSwitch"
+        android:text="@string/dark_theme" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/settings_row_height"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/space_16"
-        android:paddingEnd="@dimen/space_16"
+        style="@style/SettingsMenuItem"
         android:text="@string/share_app"
-        android:textColor="@color/text_primary"
-        android:textSize="@dimen/text_size_16"
-        app:drawableEndCompat="@drawable/ic_share"
-        app:drawableTint="@color/yp_gray" />
+        app:drawableEndCompat="@drawable/ic_share" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/settings_row_height"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/space_16"
-        android:paddingEnd="@dimen/space_16"
+        style="@style/SettingsMenuItem"
         android:text="@string/write_to_support"
-        android:textColor="@color/text_primary"
-        android:textSize="@dimen/text_size_16"
-        app:drawableEndCompat="@drawable/ic_support"
-        app:drawableTint="@color/yp_gray" />
+        app:drawableEndCompat="@drawable/ic_support" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/settings_row_height"
-        android:gravity="center_vertical"
-        android:paddingStart="@dimen/space_16"
-        android:paddingEnd="@dimen/space_16"
+        style="@style/SettingsMenuItem"
         android:text="@string/user_agreement"
-        android:textColor="@color/text_primary"
-        android:textSize="@dimen/text_size_16"
-        app:drawableEndCompat="@drawable/ic_arrow_forward"
-        app:drawableTint="@color/yp_gray" />
+        app:drawableEndCompat="@drawable/ic_arrow_forward" />
 
 </LinearLayout>
